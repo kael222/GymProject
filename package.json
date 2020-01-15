@@ -1,0 +1,26 @@
+{
+  "name": "nowy-folder",
+  "version": "1.0.0",
+  "description": "https://github.com/kael222/GymProject.git",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kael222/GymProject.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "Lukasz Kowalik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kael222/GymProject/issues"
+  },
+  "homepage": "https://github.com/kael222/GymProject#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0"
+  }
+}

@@ -1,95 +1,102 @@
-.col-1 {
+.container .col-1 {
   width: 8.33333%;
 }
 
-.col-2 {
+.container .col-2 {
   width: 16.66667%;
 }
 
-.col-3 {
+.container .col-3 {
   width: 25%;
 }
 
-.col-4 {
+.container .col-4 {
   width: 33.33333%;
 }
 
-.col-5 {
+.container .col-5 {
   width: 41.66667%;
 }
 
-.col-6 {
+.container .col-6 {
   width: 50%;
 }
 
-.col-7 {
+.container .col-7 {
   width: 58.33333%;
 }
 
-.col-8 {
+.container .col-8 {
   width: 66.66667%;
 }
 
-.col-9 {
+.container .col-9 {
   width: 75%;
 }
 
-.col-10 {
+.container .col-10 {
   width: 83.33333%;
 }
 
-.col-11 {
+.container .col-11 {
   width: 91.66667%;
 }
 
-.col-12 {
+.container .col-12 {
   width: 100%;
 }
 
-.row-1 {
+.container .row-1 {
   width: 1000px;
 }
 
-.row-2 {
+.container .row-2 {
   width: 1000px;
 }
 
-.row-3 {
+.container .row-3 {
   width: 1000px;
 }
 
-.row-4 {
+.container .row-4 {
   width: 1000px;
 }
 
-.row-5 {
+.container .row-5 {
   width: 1000px;
 }
 
-.row-6 {
+.container .row-6 {
   width: 1000px;
 }
 
-.row-7 {
+.container .row-7 {
   width: 1000px;
 }
 
-.row-8 {
+.container .row-8 {
   width: 1000px;
 }
 
-.row-9 {
+.container .row-9 {
   width: 1000px;
 }
 
-.row-10 {
+.container .row-10 {
   width: 1000px;
 }
 
-.row-11 {
+.container .row-11 {
   width: 1000px;
 }
 
-.row-12 {
+.container .row-12 {
   width: 1000px;
+}
+
+* {
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
 }

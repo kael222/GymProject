@@ -1,13 +1,15 @@
 $columns: 12;
 
-@for $i from 1 through $columns {
-  .col-#{$i} {
-    width: 100%/12 * $i;
+.container {
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      width: 100%/12 * $i;
+    }
   }
-}
 
-@for $i from 1 through 12 {
-  .row-#{$i} {
-    width: 1000px;
+  @for $i from 1 through 12 {
+    .row-#{$i} {
+      width: 200px;
+    }
   }
 }

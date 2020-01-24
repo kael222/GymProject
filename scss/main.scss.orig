@@ -1,0 +1,7 @@
+@import "partials/grid";
+<<<<<<< HEAD
+
+$colors: green;
+=======
+@import "partials/landingPage";
+>>>>>>> test

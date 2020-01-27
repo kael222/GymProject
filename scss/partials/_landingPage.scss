@@ -2,17 +2,33 @@
   margin: 0;
   padding: 0;
   display: flex;
-}
-.container {
-  width: 1024px;
-  height: 1024px;
+  flex-direction: column;
 }
 
+.container {
+  width: 1024px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+
+  nav {
+    margin: 10px;
+  }
+}
 section {
   display: flex;
   flex-direction: row;
+  height: 80vh;
+  flex-wrap: wrap;
 
   div {
-    background-color: yellow;
+    background-color: green;
+    margin: 10px;
+    color: blue;
+    height: 200px;
   }
 }

@@ -6,10 +6,4 @@ $columns: 12;
       width: 100%/12 * $i;
     }
   }
-
-  @for $i from 1 through 12 {
-    .row-#{$i} {
-      width: 200px;
-    }
-  }
 }

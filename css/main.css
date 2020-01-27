@@ -1,102 +1,85 @@
 .container .col-1 {
-  width: 8.33333%;
-}
+  width: 8.33333%; }
 
 .container .col-2 {
-  width: 16.66667%;
-}
+  width: 16.66667%; }
 
 .container .col-3 {
-  width: 25%;
-}
+  width: 25%; }
 
 .container .col-4 {
-  width: 33.33333%;
-}
+  width: 33.33333%; }
 
 .container .col-5 {
-  width: 41.66667%;
-}
+  width: 41.66667%; }
 
 .container .col-6 {
-  width: 50%;
-}
+  width: 50%; }
 
 .container .col-7 {
-  width: 58.33333%;
-}
+  width: 58.33333%; }
 
 .container .col-8 {
-  width: 66.66667%;
-}
+  width: 66.66667%; }
 
 .container .col-9 {
-  width: 75%;
-}
+  width: 75%; }
 
 .container .col-10 {
-  width: 83.33333%;
-}
+  width: 83.33333%; }
 
 .container .col-11 {
-  width: 91.66667%;
-}
+  width: 91.66667%; }
 
 .container .col-12 {
-  width: 100%;
-}
-
-.container .row-1 {
-  width: 1000px;
-}
-
-.container .row-2 {
-  width: 1000px;
-}
-
-.container .row-3 {
-  width: 1000px;
-}
-
-.container .row-4 {
-  width: 1000px;
-}
-
-.container .row-5 {
-  width: 1000px;
-}
-
-.container .row-6 {
-  width: 1000px;
-}
-
-.container .row-7 {
-  width: 1000px;
-}
-
-.container .row-8 {
-  width: 1000px;
-}
-
-.container .row-9 {
-  width: 1000px;
-}
-
-.container .row-10 {
-  width: 1000px;
-}
-
-.container .row-11 {
-  width: 1000px;
-}
-
-.container .row-12 {
-  width: 1000px;
-}
+  width: 100%; }
 
 * {
-  padding: 10px;
-  margin: 10px;
-  box-sizing: border-box;
-  font-size: 12px;
-}
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  width: 1024px; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black; }
+  footer nav {
+    margin: 10px; }
+
+section {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  flex-wrap: wrap; }
+  section div {
+    background-color: green;
+    margin: 10px;
+    color: blue;
+    height: 200px; }
+
+body * {
+  background-color: blue;
+  flex-direction: column;
+  display: flex; }
+  body * section {
+    display: flex;
+    flex-direction: column; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body * {
+      background-color: yellowgreen;
+      display: flex;
+      flex-direction: row; } }
+  @media screen and (min-width: 1025px) {
+    body * {
+      display: flex;
+      flex-direction: wrap;
+      background-color: chocolate; } }
+
+* {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif; }

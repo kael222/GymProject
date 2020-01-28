@@ -1,38 +1,133 @@
+//Reste
 * {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+  color: wheat;
 }
 
 .container {
   width: 1024px;
 }
 
+//Hamburger landingpage
+body * {
+  @media screen and (max-width: 767px) {
+    // media mobilme
+    flex-direction: column;
+    display: flex;
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+    .hamburger {
+      padding: 10px;
+      display: inline-block;
+      cursor: pointer;
+      background-color: transparent;
+      margin: 0;
+      border: 0;
+    }
+
+    .hamburger-box {
+      display: inline-block;
+      width: 40px;
+      height: 24px;
+      position: relative;
+    }
+    @mixin ham {
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      background-color: lightblue;
+    }
+
+    .hamburger .navigation {
+      transition: transform 0.3s 0.1s ease-in-out;
+    }
+    .hamburger-inner {
+      @include ham;
+      left: 0;
+      top: 50%;
+      transition: background-color 0.3s 0.1s ease-in-out;
+    }
+    .hamburger-active {
+      transform: translateX(60vw);
+    }
+
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      content: "";
+      left: 0;
+      @include ham;
+      transition: transform 0.3s 0.1s ease-in-out;
+    }
+
+    .hamburger-inner::before {
+      top: -10px;
+    }
+
+    .hamburger-inner::after {
+      top: 10px;
+    }
+
+    .hamburger-active .hamburger-inner {
+      background-color: transparent;
+    }
+
+    .hamburger-active .hamburger-inner:before {
+      transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger-active .hamburger-inner:after {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .navigation {
+      height: 80vh;
+      width: 60vw;
+      background-color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-60vw);
+    }
+
+    .navigation-active {
+      transform: translateX(0vw);
+      height: 80vh;
+      position: absolute;
+      top: 10vh;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    //landingapge desktop
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+  }
+}
+//Header lanndingpage
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: black;
-
+  height: 10vh;
   li {
     margin: 10px;
   }
-  button {
-    height: 40px;
-    width: 40px;
-  }
 }
 
-.hamburger {
-  padding: 10px;
-  display: inline-block;
-  cursor: pointer;
-  background-color: transparent;
-}
-
+//Section landingpage
 section {
   height: 80vh;
   background-image: url("../images/startbackgroundimage.jpg");
   background-size: cover;
+}
+
+footer {
+  height: 10vh;
+  background-color: black;
 }

@@ -9,26 +9,30 @@
   width: 1024px;
 }
 
-footer {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: black;
 
-  nav {
+  li {
     margin: 10px;
+  }
+  button {
+    height: 40px;
+    width: 40px;
   }
 }
-section {
-  display: flex;
-  flex-direction: row;
-  height: 80vh;
-  flex-wrap: wrap;
 
-  div {
-    background-color: green;
-    margin: 10px;
-    color: blue;
-    height: 200px;
-  }
+.hamburger {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+section {
+  height: 80vh;
+  background-image: url("../images/startbackgroundimage.jpg");
+  background-size: cover;
 }

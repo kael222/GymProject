@@ -43,24 +43,27 @@
 .container {
   width: 1024px; }
 
-footer {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: black; }
-  footer nav {
+  header li {
     margin: 10px; }
+  header button {
+    height: 40px;
+    width: 40px; }
+
+.hamburger {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent; }
 
 section {
-  display: flex;
-  flex-direction: row;
   height: 80vh;
-  flex-wrap: wrap; }
-  section div {
-    background-color: green;
-    margin: 10px;
-    color: blue;
-    height: 200px; }
+  background-image: url("../images/startbackgroundimage.jpg");
+  background-size: cover; }
 
 body * {
   background-color: blue;
@@ -69,16 +72,11 @@ body * {
   body * section {
     display: flex;
     flex-direction: column; }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) {
     body * {
       background-color: yellowgreen;
       display: flex;
       flex-direction: row; } }
-  @media screen and (min-width: 1025px) {
-    body * {
-      display: flex;
-      flex-direction: wrap;
-      background-color: chocolate; } }
 
 * {
   font-size: 24px;

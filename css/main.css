@@ -108,6 +108,10 @@
       position: absolute;
       top: 10vh; } }
 
+body * .slides img {
+  width: 1024px;
+  height: 80vh; }
+
 @media screen and (min-width: 768px) {
   body * {
     background-color: black;
@@ -123,10 +127,12 @@ header {
   header li {
     margin: 10px; }
 
-section {
-  height: 80vh;
+body {
   background-image: url("../images/startbackgroundimage.jpg");
   background-size: cover; }
+
+section {
+  height: 80vh; }
 
 footer {
   height: 10vh;
@@ -135,3 +141,7 @@ footer {
 * {
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif; }
+
+.container {
+  width: 1024px;
+  margin: auto; }

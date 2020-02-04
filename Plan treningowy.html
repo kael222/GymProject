@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <title>My test page</title>
     <!-- <link rel="stylesheet" href="css/main.css" /> -->
-
+    <script
+      src="https://kit.fontawesome.com/e0fb0b1fe0.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap&subset=latin-ext"
       rel="stylesheet"
@@ -19,117 +22,108 @@
     <h2></h2>
     <p><b>Trening: Dzień 1</b></p>
     <p id="licz">0 licz</p>
-    <button id="rododendron">Start</button>
-    <button id="rododendron1" value="Reset">Stop</button>
+    <button id="btn1">Start</button>
+    <button id="btn2" value="Reset">Stop</button>
     <div>
       <h3>Wybierz ćwiczenie</h3>
       <button value="" id="addExercise">Dodaj</button>
       <label>Klatka piersiowa</label>
-      <select id="kupa" type="text" name="Klatka piersiowa">
+      <select id="choose" type="text" name="Klatka piersiowa">
         <option>Wyciskanie sztangi na ławce płaskiej</option>
         <option>Wyciskanie sztangi na skosie dodatnim</option>
         <option>Wyciskanie na ławce płaskiej hantlami</option>
         <option>Wyciskanie na ławce skośnej hantlami</option>
         <option>Krzyżowanie linek wyciągu górnego z góry do dołu</option>
-        <option value=""
-          >Krzyżowanie linek wyciągu dolnego z dołu do góry</option
-        >
-        <option value="">Rozpiętki w leżeniu na ławce płaskiej</option>
-        <option value="">Rozpiętki w leżeniu na ławce skośnej dodatniej</option>
-        <option value="">Rozpiętki w leżeniu na ławce skośnej ujemnej</option>
-        <option value="">Rozpiętki w leżeniu na podłodze</option>
-        <option value="">Bayesian Flyes</option>
+        <option>Krzyżowanie linek wyciągu dolnego z dołu do góry</option>
+        <option>Rozpiętki w leżeniu na ławce płaskiej</option>
+        <option>Rozpiętki w leżeniu na ławce skośnej dodatniej</option>
+        <option>Rozpiętki w leżeniu na ławce skośnej ujemnej</option>
+        <option>Rozpiętki w leżeniu na podłodze</option>
+        <option>Bayesian Flyes</option>
         <option>Wyciskanie sztangi nad głowę stojąc - OHP</option>
-        <option value="">Wyciskanie sztangi nad głowę siedząc</option>
-        <option value="">Wyciskanie hantli nad głowę stojąc</option>
-        <option value="">Wyciskanie hantli nad głowę siedząc</option>
-        <option value="">Unoszenie hantli bokiem stojąc</option>
-        <option value=""
+        <option>Wyciskanie sztangi nad głowę siedząc</option>
+        <option>Wyciskanie hantli nad głowę stojąc</option>
+        <option>Wyciskanie hantli nad głowę siedząc</option>
+        <option>Unoszenie hantli bokiem stojąc</option>
+        <option
           >Unoszenie hantli bokiem w oparciu o ławkę brzuchem stojąc</option
         >
-        <option value="">Unoszenie ramion w bok na wyciągu</option>
-        <option value=""
+        <option>Unoszenie ramion w bok na wyciągu</option>
+        <option
           >Przyciąganie sznurków do brody na wyciągu z dołu do góry</option
         >
-        <option value="">Facepull</option>
-        <option value="">Barbell Facepull</option>
-        <option value="">Unoszenie bokiem w opadzie tułowia</option>
-        <option value=""
-          >Odwrotne rozpiętki leżąc na ławce skośnej brzuchem</option
-        >
-        <option value="">Plank klasyczny</option>
-        <option value="">Plank robiony na piłce</option>
-        <option value="">Plank z oddaleniem łokci do przodu</option>
-        <option value="">"Kółeczko" z siedzenia</option>
-        <option value=""
-          >„Kółeczko” ze stania ( wersja dla zaawansowanych)</option
-        >
-        <option value="">Unoszenie nóg w leżeniu/siedzeniu na ławce</option>
-        <option value="">Unoszenie nóg w zwisie na drążku</option>
-        <option value="">Allahy stojąc/klęcząc</option>
-        <option value="">Hollow body</option>
-        <option value="">Hollow body z hantlem</option>
-        <option value="">Paloff press</option>
-        <option value="">Woodchooper</option>
-        <option value="">Plank boczny</option>
-        <option value="">Uginanie hantli z supinacją nadgarstka</option>
-        <option value="">Uginanie hantli młotkowe</option>
-        <option value="">Uginanie hantli na modlitewniku</option>
-        <option value="">Uginanie hantli siedząc w oparciu o ławkę</option>
-        <option value="">Uginanie hantli 1 ręką w podporze o nogę</option>
-        <option value="">Uginanie sztangi prostej stojąc</option>
-        <option value="">Uginanie sztangi prostej na modlitewniku</option>
-        <option value="">Bayesian Curls</option>
-        <option value="">Herkulesy</option>
-        <option value="">Uginanie hantli francuskie stojąc</option>
-        <option value="">Uginanie hantli francuskie siedząc</option>
-        <option value="">Uginanie hantli /sztangi francuskie leżąc</option>
-        <option value="">Prostowania ramion na wyciągu</option>
-        <option value="">Dipy na poręczach</option>
-        <option value="">Wyciskanie sztangi wąsko</option>
-        <option value="">Podciągania na drążku chwyt neutralny</option>
-        <option value="">Podciągania na drążku nachwyt</option>
-        <option value="">Podciągania na drążku podchwyt</option>
-        <option value=""
+        <option>Facepull</option>
+        <option>Barbell Facepull</option>
+        <option>Unoszenie bokiem w opadzie tułowia</option>
+        <option>Odwrotne rozpiętki leżąc na ławce skośnej brzuchem</option>
+        <option>Plank klasyczny</option>
+        <option>Plank robiony na piłce</option>
+        <option>Plank z oddaleniem łokci do przodu</option>
+        <option>"Kółeczko" z siedzenia</option>
+        <option>„Kółeczko” ze stania ( wersja dla zaawansowanych)</option>
+        <option>Unoszenie nóg w leżeniu/siedzeniu na ławce</option>
+        <option>Unoszenie nóg w zwisie na drążku</option>
+        <option>Allahy stojąc/klęcząc</option>
+        <option>Hollow body</option>
+        <option>Hollow body z hantlem</option>
+        <option>Paloff press</option>
+        <option>Woodchooper</option>
+        <option>Plank boczny</option>
+        <option>Uginanie hantli z supinacją nadgarstka</option>
+        <option>Uginanie hantli młotkowe</option>
+        <option>Uginanie hantli na modlitewniku</option>
+        <option>Uginanie hantli siedząc w oparciu o ławkę</option>
+        <option>Uginanie hantli 1 ręką w podporze o nogę</option>
+        <option>Uginanie sztangi prostej stojąc</option>
+        <option>Uginanie sztangi prostej na modlitewniku</option>
+        <option>Bayesian Curls</option>
+        <option>Herkulesy</option>
+        <option>Uginanie hantli francuskie stojąc</option>
+        <option>Uginanie hantli francuskie siedząc</option>
+        <option>Uginanie hantli /sztangi francuskie leżąc</option>
+        <option>Prostowania ramion na wyciągu</option>
+        <option>Dipy na poręczach</option>
+        <option>Wyciskanie sztangi wąsko</option>
+        <option>Podciągania na drążku chwyt neutralny</option>
+        <option>Podciągania na drążku nachwyt</option>
+        <option>Podciągania na drążku podchwyt</option>
+        <option
           >Ściąganie linki/drążka wyciągu górnego do klatki nachwytem</option
         >
         <option value=""
           >Ściąganie linki/drążka wyciągu górnego do klatki podchwytem</option
         >
-        <option value=""
+        <option
           >Ściąganie linki/drążka wyciągu górnego do klatki
           chwytemneutralnym</option
         >
-        <option value="">Wiosłowanie sztanga w opadzie tułowia</option>
-        <option value="">Wiosłowanie hantlem w oparciu o ławkę</option>
-        <option value="">Wiosłowanie hantlem w oparciu o stojak</option>
-        <option value="">Pendlay Row</option>
-        <option value="">Wiosłowanie końcem sztangi</option>
-        <option value=""
-          >Wiosłowanie końcem sztangi 1 ręką stojąc bokiem</option
-        >
+        <option>Wiosłowanie sztanga w opadzie tułowia</option>
+        <option>Wiosłowanie hantlem w oparciu o ławkę</option>
+        <option>Wiosłowanie hantlem w oparciu o stojak</option>
+        <option>Pendlay Row</option>
+        <option>Wiosłowanie końcem sztangi</option>
+        <option>Wiosłowanie końcem sztangi 1 ręką stojąc bokiem</option>
         <option value="">Focze wiosło hantlami</option>
-        <option value="">Martwy ciąg sumo/klasyczny</option>
-        <option value="">Martwy ciąg na prostych nogach</option>
-        <option value="">Rumuński Martwy</option>
-        <option value=""></option>
-        <option value="">Przysiad Klasyczny</option>
-        <option value="">Przysiad Low bar</option>
-        <option value="">Front Squat</option>
-        <option value="">Goblet Squat</option>
-        <option value="">Wypychanie nóg na suwnicy</option>
-        <option value="">Prostowanie nóg na maszynie</option>
-        <option value="">Przysiad bułgarski</option>
-        <option value="">Zakroki z hantlami</option>
-        <option value="">Zakroki ze sztangą</option>
-        <option value="">Rumuński Martwy ciąg</option>
-        <option value="">KickBacks na wyciągu</option>
-        <option value=""
+        <option>Martwy ciąg sumo/klasyczny</option>
+        <option>Martwy ciąg na prostych nogach</option>
+        <option>Rumuński Martwy</option>
+        <option>Przysiad Klasyczny</option>
+        <option>Przysiad Low bar</option>
+        <option>Front Squat</option>
+        <option>Goblet Squat</option>
+        <option>Wypychanie nóg na suwnicy</option>
+        <option>Prostowanie nóg na maszynie</option>
+        <option>Przysiad bułgarski</option>
+        <option>Zakroki z hantlami</option>
+        <option>Zakroki ze sztangą</option>
+        <option>Rumuński Martwy ciąg</option>
+        <option>KickBacks na wyciągu</option>
+        <option
           >Uginanie nóg leżąc brzuchem na ławce hantlami miedzy stopami</option
         >
-        <option value="">Uginanie nóg na maszynie siedząc</option>
-        <option value="">Wspięcia na palce stojąc</option>
-        <option value="">Wspięcia na palce siedząc</option>
+        <option>Uginanie nóg na maszynie siedząc</option>
+        <option>Wspięcia na palce stojąc</option>
+        <option>Wspięcia na palce siedząc</option>
       </select>
     </div>
     <ul id="list">

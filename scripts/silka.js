@@ -1,8 +1,8 @@
-// zaczate storera jakb yco
+// zaczate storera jakb y co
 
-let buttons = document.getElementById("rododendron");
+let buttons = document.getElementById("btn1");
 console.log(buttons);
-let buttons1 = document.getElementById("rododendron1");
+let buttons1 = document.getElementById("btn2");
 console.log(buttons1);
 
 let pp = document.getElementById("licz");
@@ -25,27 +25,28 @@ buttons1.addEventListener("click", function() {
 });
 
 // Próbuję stworzyc listę to do do ćwiczeń
-
-let addButtons = document.getElementById("addExercise");
-console.log(addButtons);
-
-let lists = document.getElementById("list");
-console.log(lists); //ul
+const addButtons = document.getElementById("addExercise"); //znajduję button
 
 addButtons.addEventListener("click", function() {
-  let addInput = document.getElementById("kupa");
-  console.log(addInput);
+  const lists = document.getElementById("list"); //znajduję listę do której bedę dodawał ćwiczenia
+  const addInput = document.getElementById("choose").value; //value by pokazało tekst nie obiekt html
 
-  let newli = document.createElement("li"); //tworzę lsitę li
-  let paragrph = document.createElement("p");
-  let b1 = document.createElement("button");
-  let b2 = document.createElement("button");
+  const newlist = document.createElement("li"); //tworzę tworę nowy element listy
+  const lI = document.createTextNode(addInput); //
+  const b1 = document.createElement("button");
+  const b2 = document.createElement("button");
+
+  lists.appendChild(newlist);
+  newlist.appendChild(lI);
+  newlist.appendChild(b1);
+  newlist.appendChild(b2);
 
   b1.innerText = "completed";
   b2.innerText = "deleted";
-  paragrph.innerText = addInput.innerHTML;
-  lists.appendChild(newli);
-  newli.appendChild(paragrph);
-  newli.appendChild(b1);
-  newli.appendChild(b2);
+
+  b2.addEventListener("click", function() {
+    console.log("delete");
+
+    this.previousSibling.previousSibling.remove(this.previousSibling);
+  });
 });

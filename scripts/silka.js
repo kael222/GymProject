@@ -44,9 +44,14 @@ addButtons.addEventListener("click", function() {
   b1.innerText = "completed";
   b2.innerText = "deleted";
 
-  b2.addEventListener("click", function() {
+  b1.addEventListener("click", function() {
+    b1.classList.toggle("check");
+    var t = document;
+  });
+
+  b2.addEventListener("click", function(e) {
     console.log("delete");
 
-    this.previousSibling.previousSibling.remove(this.previousSibling);
+    e.target.parentNode.remove(e.target.previousSibling);
   });
 });
